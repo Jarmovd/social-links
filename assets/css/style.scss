@@ -1,0 +1,19 @@
+/* file import */
+@import "font";
+@import "variables";
+@import "mixins";
+@import "card";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  background-color: $color-black;
+  height: 100vh;
+  @include flex-center();
+  font-size: 14px;
+}

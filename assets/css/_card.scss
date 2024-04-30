@@ -1,0 +1,63 @@
+.card {
+  padding: 40px;
+  background-color: $color-darkgrey;
+  gap: 20px;
+  border-radius: 20px;
+  color: $color-white;
+  min-width: 350px;
+  text-align: center;
+
+  &_content {
+    padding-bottom: 30px;
+    @include flex-center();
+    &_img {
+      width: 80px;
+      border-radius: 50%;
+    }
+    &_name {
+      font-size: 24px;
+      font-weight: 600;
+      padding: 20px 0 10px 0;
+    }
+    &_location {
+      color: $color-green;
+      font-weight: 600;
+      font-size: 14px;
+      padding-bottom: 30px;
+    }
+    &_bio {
+    }
+  }
+
+  &_social {
+    width: 100%;
+    @include flex-center();
+    gap: 10px;
+    &_link {
+      display: block;
+      text-decoration: none;
+      background-color: $color-grey;
+      color: $color-white;
+      width: 100%;
+      padding: 15px;
+      font-weight: 700;
+      border-radius: 5px;
+
+      &:hover {
+        color: $color-black;
+        background-color: $color-green;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+    padding: 10px;
+  }
+  .card {
+    padding: 20px;
+    min-width: 100%;
+  }
+}
